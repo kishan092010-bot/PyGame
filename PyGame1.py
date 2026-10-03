@@ -5,8 +5,11 @@ pygame.init()
 SCREEN_WIDTH, SCREEN_HEIGHT = 500, 500
 display_surface = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
+
 pygame.display.set_caption("Adding image & background image...")
 
+#  .transform.scale ---> Resize it
+# .convert ---> The image internal pixel format to match your screen format
 background_image = pygame.transform.scale(pygame.image.load("images.jpg")
                                           .convert(), 
                                           (SCREEN_WIDTH, SCREEN_HEIGHT)
